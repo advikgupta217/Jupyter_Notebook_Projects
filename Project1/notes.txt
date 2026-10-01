@@ -1,0 +1,39 @@
+PROJECT 1: SIMPLE CALCULATOR
+
+Objective:
+Build a basic calculator using Python in Jupyter Notebook.
+
+Tools Used:
+- Python
+- Jupyter Notebook (installed through Anaconda)
+
+Concepts Learned:
+1. Variables: Store values in variables such as num1 and num2.
+2. Input: input() collects information from the user.
+3. Type conversion: float() converts input into a number.
+4. Operators: + for addition, - for subtraction, * for multiplication, and / for division.
+5. Conditional statements: if, elif, and else select the operation.
+6. Error handling: Prevent division by zero and handle invalid operators.
+7. Output: print() displays the results.
+
+How to Run:
+1. Open the notebook in Jupyter Notebook.
+2. Select the calculator code cell.
+3. Press Shift + Enter.
+4. Enter two numbers and choose an operator.
+
+Test Cases:
+- 15 + 5 = 20
+- 15 - 5 = 10
+- 15 * 5 = 75
+- 15 / 5 = 3.0
+- Division by zero displays an error message.
+- An invalid operator displays an invalid-operation message.
+
+Learning Outcome:
+Learned Python basics and how to create, run, test, and save a simple project in Jupyter Notebook.
+
+Future Improvements:
+- Add exponentiation.
+- Allow repeated calculations without rerunning the cell.
+- Improve input validation.
