@@ -1,0 +1,77 @@
+PROJECT 2: STUDENT MARKS ANALYZER
+
+1. OBJECTIVE
+Create a Python program that accepts a student's marks in five subjects and calculates total marks, percentage, grade, and pass/fail status.
+
+2. TECHNOLOGIES USED
+- Python
+- Jupyter Notebook
+- Anaconda
+
+3. PYTHON CONCEPTS USED
+- Variables: Store the student's name, marks, total, percentage, grade, and result.
+- Lists: Store subject names and marks.
+- Input/output: Accept user input and display the report.
+- Type conversion: Convert marks from input strings to floating-point numbers.
+- for loops: Iterate through subjects and marks.
+- Conditional statements: if, elif, and else.
+- List methods: append().
+- Built-in functions: input(), print(), float(), len(), sum(), all(), zip().
+- F-strings: Insert variables into formatted strings.
+- Comparison and logical operators: >=, <, >, or, and ==.
+
+4. PYTHON FUNCTIONS AND METHODS
+input(prompt): Accepts input from the user and returns a string.
+print(*objects): Displays text and values.
+float(x): Converts a number or numeric string into a floating-point number.
+len(object): Returns the number of items in an object, such as a list.
+sum(iterable): Adds the numeric items in an iterable.
+all(iterable): Returns True if all items in the iterable are truthy. Here, it checks whether every subject mark is at least 35.
+zip(*iterables): Pairs corresponding items from multiple iterables, such as subjects and marks.
+list.append(item): Adds one item to the end of a list. append() is a list method, not a standalone built-in function.
+
+Other syntax used:
+range checks with < and >; == for equality; >= for minimum passing marks; or for combining invalid-range conditions; f-strings for formatted output; :.2f for two decimal places; :g for removing unnecessary trailing zeros; and a conditional expression for displaying PASS or FAIL.
+
+5. FORMULAS
+Total Marks = Sum of marks in all subjects.
+Percentage = (Total Marks / Maximum Total Marks) * 100.
+With five subjects worth 100 marks each, Maximum Total Marks = 500. Because there are five equally weighted subjects, total / 5 gives the same numerical percentage.
+
+6. GRADING SCALE
+90-100%: A+
+80-89.99%: A
+70-79.99%: B
+60-69.99%: C
+50-59.99%: D
+Below 50%: F
+
+Passing rule: The student must score at least 35 marks in every subject. The grade depends on the overall percentage, while PASS/FAIL depends on every individual subject mark.
+
+7. HOW TO RUN
+1. Open the notebook in Jupyter Notebook.
+2. Run the code cell with Shift + Enter.
+3. Enter the student's name.
+4. Enter marks for all five subjects, from 0 to 100.
+5. View the generated result report.
+
+8. TEST CASES
+Test 1: 85, 78, 92, 95, 80 -> Total 430/500; 86%; Grade A; PASS.
+Test 2: 95, 92, 90, 96, 97 -> Total 470/500; 94%; Grade A+; PASS.
+Test 3: 80, 75, 32, 90, 85 -> Total 362/500; 72.4%; Grade B; FAIL.
+Test 4: 20, 25, 30, 28, 15 -> Total 118/500; 23.6%; Grade F; FAIL.
+
+9. LIMITATIONS
+- Non-numeric input such as letters is not handled yet.
+- Invalid marks cause the program to stop collecting marks and ask the user to restart the cell.
+- The grading scale and passing threshold are example rules and may differ from actual institutions.
+
+10. FUTURE IMPROVEMENTS
+- Handle non-numeric input using try and except.
+- Display the highest and lowest marks.
+- Identify the subject with the highest mark.
+- Count passed subjects.
+- Allow multiple students and compare their results.
+
+11. LEARNING OUTCOME
+Learned how to use lists, input/output functions, loops, conditional statements, built-in functions, list methods, and formatted strings to build a simple data-analysis program.
