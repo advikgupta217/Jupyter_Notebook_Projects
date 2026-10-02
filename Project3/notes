@@ -1,0 +1,266 @@
+PROJECT 3: STUDENT PERFORMANCE VISUALIZATION USING MATPLOTLIB
+
+==================================================
+1. PROJECT OBJECTIVE
+==================================================
+
+The objective is to visualize student marks using Python and Matplotlib. The project creates bar, line, and pie charts and calculates summary statistics.
+
+2. TECHNOLOGIES USED
+- Python
+- Jupyter Notebook
+- Anaconda
+- Matplotlib
+
+3. LIBRARY IMPORT
+
+import matplotlib.pyplot as plt
+
+Here:
+- matplotlib is the plotting library.
+- pyplot is a module that provides plotting functions.
+- plt is a commonly used alias for pyplot.
+
+4. DATA USED
+
+subjects = ["Maths", "Science", "English", "Computer", "Hindi"]
+marks = [85, 78, 92, 95, 80]
+
+The subjects list contains category names. The marks list contains the corresponding scores.
+
+5. TYPES OF CHARTS
+
+A. Bar chart:
+Uses rectangular bars to compare marks across subjects.
+Function: plt.bar()
+
+B. Line chart:
+Connects data points to show changes in values.
+Function: plt.plot()
+
+C. Pie chart:
+Shows each subject's share of the total marks.
+Function: plt.pie()
+
+D. Horizontal bar chart:
+Displays horizontal bars.
+Function: plt.barh()
+
+E. Scatter plot:
+Displays the relationship between two numerical variables.
+Function: plt.scatter()
+
+F. Histogram:
+Displays the distribution of numerical data.
+Function: plt.hist()
+
+6. SUMMARY STATISTICS
+
+total = sum(marks)
+average = total / len(marks)
+highest = max(marks)
+lowest = min(marks)
+
+Expected results:
+Total = 430 / 500
+Average = 86
+Highest mark = 95
+Lowest mark = 78
+
+7. MATPLOTLIB FUNCTIONS AND METHODS
+
+A. FIGURE AND AXES
+- plt.figure(): Creates a figure.
+- plt.subplots(): Creates a figure and one or more axes.
+- plt.subplot(): Selects a subplot in a grid.
+- plt.gca(): Gets the current Axes.
+- plt.gcf(): Gets the current Figure.
+- plt.axes(): Adds or selects axes.
+- plt.sca(): Sets the current Axes.
+- plt.clf(): Clears the current figure.
+- plt.cla(): Clears the current axes.
+- plt.close(): Closes a figure.
+
+B. BASIC PLOTTING
+- plt.plot(): Creates line plots.
+- plt.scatter(): Creates scatter plots.
+- plt.bar(): Creates vertical bar charts.
+- plt.barh(): Creates horizontal bar charts.
+- plt.hist(): Creates histograms.
+- plt.pie(): Creates pie charts.
+- plt.boxplot(): Creates box plots.
+- plt.violinplot(): Creates violin plots.
+- plt.stem(): Creates stem plots.
+- plt.step(): Creates step plots.
+- plt.stackplot(): Creates stacked area plots.
+- plt.fill_between(): Fills the area between curves.
+- plt.errorbar(): Displays data with error bars.
+- plt.hexbin(): Creates hexagonal binning plots.
+- plt.eventplot(): Displays event data.
+- plt.imshow(): Displays image or 2D array data.
+- plt.matshow(): Displays a matrix as an image.
+- plt.contour(): Creates contour lines.
+- plt.contourf(): Creates filled contour plots.
+- plt.pcolor(): Creates pseudocolor plots.
+- plt.pcolormesh(): Creates a pseudocolor mesh.
+- plt.spy(): Displays the sparsity pattern of a matrix.
+
+C. TITLES AND LABELS
+- plt.title(): Sets the chart title.
+- plt.xlabel(): Sets the x-axis label.
+- plt.ylabel(): Sets the y-axis label.
+- plt.suptitle(): Adds a figure-level title.
+- plt.text(): Adds text at specified coordinates.
+- plt.annotate(): Adds an annotation with optional arrow.
+- plt.figtext(): Adds text at figure coordinates.
+
+D. AXES AND TICKS
+- plt.xlim(): Sets x-axis limits.
+- plt.ylim(): Sets y-axis limits.
+- plt.xticks(): Sets or gets x-axis tick positions and labels.
+- plt.yticks(): Sets or gets y-axis tick positions and labels.
+- plt.tick_params(): Customizes tick marks and labels.
+- plt.minorticks_on(): Enables minor ticks.
+- plt.minorticks_off(): Disables minor ticks.
+- plt.margins(): Sets margins around plotted data.
+- plt.axis(): Gets or sets axis properties.
+- plt.gca().invert_xaxis(): Reverses the x-axis.
+- plt.gca().invert_yaxis(): Reverses the y-axis.
+
+E. GRID AND LEGEND
+- plt.grid(): Displays or customizes grid lines.
+- plt.legend(): Displays the legend.
+- plt.legend(loc="best"): Places the legend automatically.
+- plt.colorbar(): Adds a color scale to a plot.
+
+F. APPEARANCE AND STYLING
+- plt.style.use(): Applies a predefined style.
+- plt.set_cmap(): Sets the default colormap.
+- plt.get_cmap(): Retrieves a colormap.
+- plt.tight_layout(): Adjusts spacing to prevent overlap.
+- plt.subplots_adjust(): Adjusts subplot spacing.
+- plt.rcParams: Controls default plotting settings.
+- plt.margins(): Adjusts plot margins.
+
+G. LINES, PATCHES, AND SHAPES
+- plt.axhline(): Adds a horizontal reference line.
+- plt.axvline(): Adds a vertical reference line.
+- plt.axline(): Adds a line through a point.
+- plt.hlines(): Adds horizontal line segments.
+- plt.vlines(): Adds vertical line segments.
+- plt.fill(): Draws and fills a polygon.
+- plt.arrow(): Draws an arrow.
+- plt.axhspan(): Highlights a horizontal band.
+- plt.axvspan(): Highlights a vertical band.
+
+H. FIGURE DISPLAY AND EXPORT
+- plt.show(): Displays the figure.
+- plt.savefig(): Saves a figure to a file.
+- plt.pause(): Pauses briefly and updates the figure.
+- plt.close(): Closes the figure.
+
+I. USEFUL AXES METHODS
+These are methods called on an Axes object, commonly named ax:
+- ax.plot(): Creates a line plot.
+- ax.scatter(): Creates a scatter plot.
+- ax.bar(): Creates a bar chart.
+- ax.barh(): Creates a horizontal bar chart.
+- ax.hist(): Creates a histogram.
+- ax.pie(): Creates a pie chart.
+- ax.set_title(): Sets the axes title.
+- ax.set_xlabel(): Sets the x-axis label.
+- ax.set_ylabel(): Sets the y-axis label.
+- ax.set_xlim(): Sets x-axis limits.
+- ax.set_ylim(): Sets y-axis limits.
+- ax.set_xticks(): Sets x-axis tick positions.
+- ax.set_yticks(): Sets y-axis tick positions.
+- ax.legend(): Adds a legend.
+- ax.grid(): Adds grid lines.
+- ax.text(): Adds text.
+- ax.annotate(): Adds annotations.
+- ax.set_aspect(): Controls the aspect ratio.
+- ax.set_axis_off(): Hides the axes.
+- ax.twinx(): Creates a second y-axis.
+- ax.twiny(): Creates a second x-axis.
+
+8. IMPORTANT PYTHON FUNCTIONS USED
+
+- print(): Displays output.
+- sum(): Calculates the sum of marks.
+- len(): Counts the number of items.
+- max(): Finds the highest value.
+- min(): Finds the lowest value.
+
+9. IMPORTANT PARAMETERS
+
+- figsize=(8, 5): Sets figure width and height in inches.
+- color: Sets the plot color.
+- marker="o": Adds circular markers.
+- linestyle="--": Sets a dashed line.
+- linewidth: Sets line thickness.
+- alpha: Controls transparency.
+- label: Names a data series for the legend.
+- bins: Sets the number of histogram bins.
+- autopct="%1.1f%%": Displays pie percentages.
+- startangle=90: Rotates the pie chart.
+- dpi=300: Sets image resolution when saving.
+- bbox_inches="tight": Reduces excess whitespace around saved figures.
+
+10. EXAMPLE CODE
+
+import matplotlib.pyplot as plt
+
+subjects = ["Maths", "Science", "English", "Computer", "Hindi"]
+marks = [85, 78, 92, 95, 80]
+
+plt.figure(figsize=(8, 5))
+plt.bar(subjects, marks)
+plt.title("Student Marks by Subject")
+plt.xlabel("Subjects")
+plt.ylabel("Marks out of 100")
+plt.ylim(0, 100)
+plt.grid(axis="y", linestyle="--", alpha=0.4)
+plt.tight_layout()
+plt.savefig("student_marks_bar_chart.png", dpi=300, bbox_inches="tight")
+plt.show()
+
+11. HOW TO RUN
+
+1. Open the notebook in Jupyter Notebook.
+2. Ensure Matplotlib is installed.
+3. Run each code cell with Shift + Enter.
+4. Observe the bar, line, and pie charts.
+5. Save the notebook with Ctrl + S.
+
+12. INSTALLATION
+
+If Matplotlib is missing, run this command in Anaconda Prompt:
+
+conda install matplotlib
+
+Restart the notebook kernel after installation if necessary.
+
+13. LEARNING OUTCOMES
+
+- Learned to import and use Matplotlib.
+- Learned to create bar, line, and pie charts.
+- Learned to add titles, labels, legends, and grids.
+- Learned to customize axes and chart appearance.
+- Learned to calculate summary statistics.
+- Learned to save plots as image files.
+
+14. LIMITATIONS AND FUTURE IMPROVEMENTS
+
+Limitations:
+- The project uses a small, fixed sample dataset.
+- The line chart connects subjects in an arbitrary order.
+- The pie chart represents each mark's share of the total, not the percentage score out of 100.
+
+Future improvements:
+- Read student data from a CSV file using pandas.
+- Compare multiple students.
+- Create histograms and scatter plots.
+- Save multiple charts automatically.
+- Apply data visualization to agriculture, rainfall, and NDVI datasets.
+
+END OF PROJECT NOTES
